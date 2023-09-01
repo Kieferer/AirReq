@@ -5,8 +5,8 @@ let mainWindow;
 
 app.on('ready', () => {
   mainWindow = new BrowserWindow({
-    width: 800,
-    height: 600,
+    width: 1400,
+    height: 700,
   });
 
   mainWindow.webContents.openDevTools();
