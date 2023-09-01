@@ -8,6 +8,9 @@ app.on('ready', () => {
     width: 1400,
     height: 700,
     frame: true,
+    webPreferences: {
+      nodeIntegration: true
+    }
   });
 
   mainWindow.webContents.openDevTools();
