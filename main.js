@@ -7,6 +7,7 @@ app.on('ready', () => {
   mainWindow = new BrowserWindow({
     width: 1400,
     height: 700,
+    frame: true,
   });
 
   mainWindow.webContents.openDevTools();
