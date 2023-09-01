@@ -1,4 +1,4 @@
-const { app, BrowserWindow } = require('electron');
+const { app, BrowserWindow, globalShortcut  } = require('electron');
 const path = require('path');
 
 let mainWindow;
@@ -13,6 +13,14 @@ app.on('ready', () => {
     }
   });
 
+  globalShortcut.register("CmdOrCtrl+Shift+C", () => {
+    mainWindow.webContents.openDevTools();
+  })
+
   mainWindow.webContents.openDevTools();
   mainWindow.loadFile(path.join(__dirname, './dist/air-req/index.html'));
+
+  app.on('will-quit', () => {
+    globalShortcut.unregisterAll();
+  });
 });
