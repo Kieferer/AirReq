@@ -18,6 +18,7 @@ import { MatCardModule } from "@angular/material/card";
 import { FlexModule } from "@angular/flex-layout";
 import { MatInputModule } from "@angular/material/input";
 import { MatSelectModule } from "@angular/material/select";
+import { MatTabsModule } from "@angular/material/tabs";
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { MatSelectModule } from "@angular/material/select";
         MatCardModule,
         FlexModule,
         MatInputModule,
-        MatSelectModule
+        MatSelectModule,
+        MatTabsModule
     ],
   providers: [],
   bootstrap: [AppComponent]
