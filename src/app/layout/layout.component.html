@@ -1,1 +1,20 @@
-<p>layout works!</p>
+
+<div fxLayout="row" style="height: calc(100vh - 64px);">
+    <div fxLayout="row" fxFlex="20%">
+        <mat-card class="layoutElement" fxFlex="20%">
+            Sidebar
+        </mat-card>
+        <mat-card class="layoutElement" fxFlex="80%">
+            Sidebar Content
+        </mat-card>
+    </div>
+
+    <div fxLayout="column" fxFlex>
+        <mat-card class="layoutElement" fxFlex="60%">
+            Center Panel
+        </mat-card>
+        <mat-card class="layoutElement" fxFlex="40%">
+            Bottom Panel
+        </mat-card>
+    </div>
+</div>
