@@ -1,1 +1,14 @@
-<p>request-builder works!</p>
+<div class="request-content">
+    <mat-form-field>
+        <mat-label>HTTP Method</mat-label>
+        <mat-select [disabled]="disableSelect.value">
+            <mat-option value="get">GET</mat-option>
+            <mat-option value="post">POST</mat-option>
+            <mat-option value="put">PUT</mat-option>
+            <mat-option value="patch">PATCH</mat-option>
+            <mat-option value="delete">DELETE</mat-option>
+            <mat-option value="head">HEAD</mat-option>
+            <mat-option value="options">OPTIONS</mat-option>
+        </mat-select>
+    </mat-form-field>
+</div>
