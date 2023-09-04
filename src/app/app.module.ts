@@ -3,6 +3,10 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { NavigationBarComponent } from './navigation-bar/navigation-bar.component';
 import { LayoutComponent } from './layout/layout.component';
+import { SidebarMenuComponent } from './sidebar-menu/sidebar-menu.component';
+import { SidebarContentComponent } from './sidebar-content/sidebar-content.component';
+import { RequestBuilderComponent } from './request-builder/request-builder.component';
+import { RequestResultComponent } from './request-result/request-result.component';
 
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
@@ -17,7 +21,11 @@ import { FlexModule } from "@angular/flex-layout";
   declarations: [
     AppComponent,
     NavigationBarComponent,
-    LayoutComponent
+    LayoutComponent,
+    SidebarMenuComponent,
+    SidebarContentComponent,
+    RequestBuilderComponent,
+    RequestResultComponent
   ],
     imports: [
         BrowserModule,
