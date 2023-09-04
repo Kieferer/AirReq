@@ -16,6 +16,8 @@ import { MatMenuModule } from "@angular/material/menu";
 import { MatIconModule } from "@angular/material/icon";
 import { MatCardModule } from "@angular/material/card";
 import { FlexModule } from "@angular/flex-layout";
+import { MatInputModule } from "@angular/material/input";
+import { MatSelectModule } from "@angular/material/select";
 
 @NgModule({
   declarations: [
@@ -35,7 +37,9 @@ import { FlexModule } from "@angular/flex-layout";
         MatMenuModule,
         MatIconModule,
         MatCardModule,
-        FlexModule
+        FlexModule,
+        MatInputModule,
+        MatSelectModule
     ],
   providers: [],
   bootstrap: [AppComponent]
