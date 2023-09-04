@@ -8,11 +8,13 @@ import { NavigationBarComponent } from './navigation-bar/navigation-bar.componen
 import { MatDividerModule } from "@angular/material/divider";
 import { MatMenuModule } from "@angular/material/menu";
 import { MatIconModule } from "@angular/material/icon";
+import { LayoutComponent } from './layout/layout.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavigationBarComponent
+    NavigationBarComponent,
+    LayoutComponent
   ],
     imports: [
         BrowserModule,
