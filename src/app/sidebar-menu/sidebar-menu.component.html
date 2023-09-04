@@ -1,8 +1,10 @@
-<button class="sidebarButton" mat-mini-fab color="primary" aria-label="Example icon button with a menu icon">
-    <mat-icon>menu</mat-icon>
-    <p>Collections</p>
-</button>
-<button class="sidebarButton" mat-mini-fab color="primary" aria-label="Example icon button with a menu icon">
-    <mat-icon>menu</mat-icon>
-    <p>Environments</p>
-</button>
+<mat-button-toggle-group class="vertical-toggle-group">
+    <mat-button-toggle value="option1">
+        <mat-icon>apps</mat-icon>
+        Collections
+    </mat-button-toggle>
+    <mat-button-toggle value="option2">
+        <mat-icon>variables</mat-icon>
+        Environments
+    </mat-button-toggle>
+</mat-button-toggle-group>
