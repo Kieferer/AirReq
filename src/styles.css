@@ -1,5 +1,4 @@
 /* You can add global styles to this file, and also import other style files */
-
 html, body {
   height: 100%;
 }
@@ -15,6 +14,10 @@ body {
 
 .layoutLight {
   background: #0f1010;
+}
+
+.layoutLighter {
+  background: #40463F;
 }
 
 .mat-ripple {
@@ -2133,7 +2136,7 @@ html {
   --mat-legacy-button-toggle-disabled-state-background-color: black;
   --mat-legacy-button-toggle-disabled-selected-state-background-color: #424242;
   --mat-standard-button-toggle-text-color: white;
-  --mat-standard-button-toggle-background-color: #424242;
+  --mat-standard-button-toggle-background-color: #40463f;
   --mat-standard-button-toggle-state-layer-color: white;
   --mat-standard-button-toggle-selected-state-background-color: #212121;
   --mat-standard-button-toggle-selected-state-text-color: white;
