@@ -7,6 +7,9 @@ import { SidebarMenuComponent } from './sidebar-menu/sidebar-menu.component';
 import { SidebarContentComponent } from './sidebar-content/sidebar-content.component';
 import { RequestBuilderComponent } from './request-builder/request-builder.component';
 import { RequestResultComponent } from './request-result/request-result.component';
+import { RequestResultBodyComponent } from './request-result-body/request-result-body.component';
+import { RequestResultCookiesComponent } from './request-result-cookies/request-result-cookies.component';
+import { RequestResultHeadersComponent } from './request-result-headers/request-result-headers.component';
 
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
@@ -28,7 +31,10 @@ import { MatTabsModule } from "@angular/material/tabs";
     SidebarMenuComponent,
     SidebarContentComponent,
     RequestBuilderComponent,
-    RequestResultComponent
+    RequestResultComponent,
+    RequestResultBodyComponent,
+    RequestResultCookiesComponent,
+    RequestResultHeadersComponent
   ],
     imports: [
         BrowserModule,
