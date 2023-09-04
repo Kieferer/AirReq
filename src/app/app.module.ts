@@ -22,6 +22,7 @@ import { FlexModule } from "@angular/flex-layout";
 import { MatInputModule } from "@angular/material/input";
 import { MatSelectModule } from "@angular/material/select";
 import { MatTabsModule } from "@angular/material/tabs";
+import { MatButtonToggleModule } from "@angular/material/button-toggle";
 
 @NgModule({
   declarations: [
@@ -47,7 +48,8 @@ import { MatTabsModule } from "@angular/material/tabs";
         FlexModule,
         MatInputModule,
         MatSelectModule,
-        MatTabsModule
+        MatTabsModule,
+        MatButtonToggleModule
     ],
   providers: [],
   bootstrap: [AppComponent]
