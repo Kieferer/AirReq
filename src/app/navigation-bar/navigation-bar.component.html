@@ -1,7 +1,19 @@
 <div class="navigation-bar">
     <div class="navigation-bar-left-container">
         <h1 class="logoText">AirReq</h1>
-        <h3 class="menuElement">Menu</h3>
+        <ul class="navContainer">
+            <li class="navElement">
+                <p mat-button [matMenuTriggerFor]="menu" class="navButton">Menu</p>
+            </li>
+            <li class="navElement">
+                <p class="menuButton">Home</p>
+            </li>
+        </ul>
+        <mat-menu #menu="matMenu">
+            <button mat-menu-item>Item 1</button>
+            <mat-divider/>
+            <button mat-menu-item>Exit</button>
+        </mat-menu>
     </div>
     <div class="navigation-bar-right-container">
         <div class="control-button-panel">
