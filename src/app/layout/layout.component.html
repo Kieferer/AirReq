@@ -1,20 +1,20 @@
 
 <div fxLayout="row" style="height: calc(100vh - 76px);">
     <div fxLayout="row" fxFlex="20%">
-        <mat-card class="layoutElement" fxFlex="20%">
+        <div class="layoutElement layoutLight" fxFlex="20%">
             <app-sidebar-menu/>
-        </mat-card>
-        <mat-card class="layoutElement" fxFlex="80%">
+        </div>
+        <div class="layoutElement layoutLight" fxFlex="80%">
             <app-sidebar-content/>
-        </mat-card>
+        </div>
     </div>
 
     <div fxLayout="column" fxFlex>
-        <mat-card class="layoutElement" fxFlex="60%">
+        <div class="layoutElement layoutDark" fxFlex="60%">
             <app-request-builder/>
-        </mat-card>
-        <mat-card class="layoutElement" fxFlex="40%">
+        </div>
+        <div class="layoutElement layoutDark" fxFlex="40%">
             <app-request-result/>
-        </mat-card>
+        </div>
     </div>
 </div>
