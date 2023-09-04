@@ -5,7 +5,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavigationBarComponent } from './navigation-bar/navigation-bar.component';
-import {MatDividerModule} from "@angular/material/divider";
+import { MatDividerModule } from "@angular/material/divider";
+import { MatMenuModule } from "@angular/material/menu";
+import { MatIconModule } from "@angular/material/icon";
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import {MatDividerModule} from "@angular/material/divider";
         BrowserModule,
         AppRoutingModule,
         BrowserAnimationsModule,
-        MatDividerModule
+        MatDividerModule,
+        MatMenuModule,
+        MatIconModule
     ],
   providers: [],
   bootstrap: [AppComponent]
