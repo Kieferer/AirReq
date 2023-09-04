@@ -1,6 +1,7 @@
 .logoText {
   font-weight: bold;
   text-align: center;
+  padding: 5px 5px 5px 5px;
 }
 
 .navigation-bar {
@@ -18,12 +19,24 @@
 .navigation-bar-right-container {
   display: flex;
   align-items: center;
-  margin: 15px 15px 0 15px;
+  margin: 15px 0 0 15px;
   justify-content: space-between;
   width: 100px;
 }
 
-.menuElement {
-  font-size: 20px;
-  margin-left: 15px;
+.navButton {
+  color: #34495e;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.navElement {
+  list-style: none;
+  display: block;
+  padding-right: 10px;
+  cursor: pointer;
+}
+
+.navContainer {
+  display: flex;
 }
