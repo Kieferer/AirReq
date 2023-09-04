@@ -1,4 +1,5 @@
 .sidebarButton {
+    display: block;
     align-content: center;
     justify-content: center;
     background-color: transparent;
@@ -6,4 +7,17 @@
     width: 60px;
     height: 50px;
     font-size: 9px;
+    overflow: clip;
+}
+.vertical-toggle-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.mat-button-toggle {
+    flex-grow: 1;
+    width: auto;
+    text-align: center;
+    height: auto;
+    display: block;
 }
