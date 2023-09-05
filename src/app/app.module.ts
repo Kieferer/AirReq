@@ -24,6 +24,7 @@ import { MatSelectModule } from "@angular/material/select";
 import { MatTabsModule } from "@angular/material/tabs";
 import { MatButtonToggleModule } from "@angular/material/button-toggle";
 import { MatButtonModule } from "@angular/material/button";
+import { MatTooltipModule } from "@angular/material/tooltip";
 
 @NgModule({
   declarations: [
@@ -51,7 +52,8 @@ import { MatButtonModule } from "@angular/material/button";
         MatSelectModule,
         MatTabsModule,
         MatButtonToggleModule,
-        MatButtonModule
+        MatButtonModule,
+        MatTooltipModule
     ],
   providers: [],
   bootstrap: [AppComponent]
