@@ -1,23 +1,25 @@
-.sidebarButton {
-    display: block;
-    align-content: center;
-    justify-content: center;
-    background-color: transparent;
-    color: aliceblue;
-    width: 60px;
-    height: 50px;
-    font-size: 9px;
-    overflow: clip;
-}
 .vertical-toggle-group {
     display: flex;
     flex-direction: column;
 }
 
-.mat-button-toggle {
+.sidebarButton {
+    display: flex;
     flex-grow: 1;
-    width: auto;
+    width: 10px;
+    height: 40px;
     text-align: center;
-    height: auto;
-    display: block;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    font-size: 10px;
+    padding: 2px 2px 2px 2px;
+    column-gap: -6px;
+}
+
+.icon {
+    -webkit-filter: invert(.75);
+    filter: invert(.75);
 }
