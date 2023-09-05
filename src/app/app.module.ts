@@ -7,6 +7,9 @@ import { SidebarMenuComponent } from './sidebar-menu/sidebar-menu.component';
 import { SidebarContentComponent } from './sidebar-content/sidebar-content.component';
 import { RequestBuilderComponent } from './request-builder/request-builder.component';
 import { RequestResultComponent } from './request-result/request-result.component';
+import { RequestResultBodyComponent } from './request-result/request-result-body/request-result-body.component';
+import { RequestResultCookiesComponent } from './request-result/request-result-cookies/request-result-cookies.component';
+import { RequestResultHeadersComponent } from './request-result/request-result-headers/request-result-headers.component';
 
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
@@ -16,6 +19,12 @@ import { MatMenuModule } from "@angular/material/menu";
 import { MatIconModule } from "@angular/material/icon";
 import { MatCardModule } from "@angular/material/card";
 import { FlexModule } from "@angular/flex-layout";
+import { MatInputModule } from "@angular/material/input";
+import { MatSelectModule } from "@angular/material/select";
+import { MatTabsModule } from "@angular/material/tabs";
+import { MatButtonToggleModule } from "@angular/material/button-toggle";
+import { MatButtonModule } from "@angular/material/button";
+import { MatTooltipModule } from "@angular/material/tooltip";
 
 @NgModule({
   declarations: [
@@ -25,7 +34,10 @@ import { FlexModule } from "@angular/flex-layout";
     SidebarMenuComponent,
     SidebarContentComponent,
     RequestBuilderComponent,
-    RequestResultComponent
+    RequestResultComponent,
+    RequestResultBodyComponent,
+    RequestResultCookiesComponent,
+    RequestResultHeadersComponent
   ],
     imports: [
         BrowserModule,
@@ -35,7 +47,13 @@ import { FlexModule } from "@angular/flex-layout";
         MatMenuModule,
         MatIconModule,
         MatCardModule,
-        FlexModule
+        FlexModule,
+        MatInputModule,
+        MatSelectModule,
+        MatTabsModule,
+        MatButtonToggleModule,
+        MatButtonModule,
+        MatTooltipModule
     ],
   providers: [],
   bootstrap: [AppComponent]
