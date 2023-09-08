@@ -25,6 +25,8 @@ import { MatTabsModule } from "@angular/material/tabs";
 import { MatButtonToggleModule } from "@angular/material/button-toggle";
 import { MatButtonModule } from "@angular/material/button";
 import { MatTooltipModule } from "@angular/material/tooltip";
+import { CollectionsContentComponent } from './collections-content/collections-content.component';
+import { VariablesContentComponent } from './variables-content/variables-content.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +39,9 @@ import { MatTooltipModule } from "@angular/material/tooltip";
     RequestResultComponent,
     RequestResultBodyComponent,
     RequestResultCookiesComponent,
-    RequestResultHeadersComponent
+    RequestResultHeadersComponent,
+    CollectionsContentComponent,
+    VariablesContentComponent
   ],
     imports: [
         BrowserModule,
