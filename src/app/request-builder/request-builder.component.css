@@ -10,3 +10,8 @@
 .request-tabs {
     margin-top: -22px;
 }
+
+.layoutGreen {
+    background-color: #40463f;
+    height: 80px;
+}
