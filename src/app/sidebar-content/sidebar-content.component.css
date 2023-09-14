@@ -1,0 +1,15 @@
+.contentHeader {
+    background-color: #40463F;
+    height: 56px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    border-right-style: none;
+}
+
+.contentTitle {
+    transform: translate(0, 7px);
+    color: #E9E7E9;
+}
