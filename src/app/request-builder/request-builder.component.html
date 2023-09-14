@@ -1,29 +1,32 @@
 <div class="request-content layoutDark">
-    <mat-form-field>
-        <mat-label>HTTP Method</mat-label>
-        <mat-select [disabled]="disableSelect.value">
-            <mat-option value="get">GET</mat-option>
-            <mat-option value="post">POST</mat-option>
-            <mat-option value="put">PUT</mat-option>
-            <mat-option value="patch">PATCH</mat-option>
-            <mat-option value="delete">DELETE</mat-option>
-            <mat-option value="head">HEAD</mat-option>
-            <mat-option value="options">OPTIONS</mat-option>
-        </mat-select>
-    </mat-form-field>
-    <mat-form-field class="request-url">
-        <mat-label>Enter URL or paste text</mat-label>
-        <input matInput placeholder="https://example.com/">
-    </mat-form-field>
-    <button class="sendButton" mat-mini-fab color="primary" aria-label="Example icon button with a menu icon">
-        <mat-icon>send</mat-icon>
-    </button>
-    <mat-tab-group class="request-tabs" animationDuration="0ms">
-        <mat-tab label="Params">Content 1</mat-tab>
-        <mat-tab label="Authorization">Content 2</mat-tab>
-        <mat-tab label="Headers">Content 3</mat-tab>
-        <mat-tab label="Body">Content 3</mat-tab>
-        <mat-tab label="Settings">Content 3</mat-tab>
-    </mat-tab-group>
-    <mat-divider/>
+    <div class="layoutGreen">
+        <mat-form-field>
+            <mat-label>HTTP Method</mat-label>
+            <mat-select [disabled]="disableSelect.value">
+                <mat-option value="get">GET</mat-option>
+                <mat-option value="post">POST</mat-option>
+                <mat-option value="put">PUT</mat-option>
+                <mat-option value="patch">PATCH</mat-option>
+                <mat-option value="delete">DELETE</mat-option>
+                <mat-option value="head">HEAD</mat-option>
+                <mat-option value="options">OPTIONS</mat-option>
+            </mat-select>
+        </mat-form-field>
+        <mat-form-field class="request-url">
+            <mat-label>Enter URL or paste text</mat-label>
+            <input matInput placeholder="https://example.com/">
+        </mat-form-field>
+        <button class="sendButton" mat-mini-fab color="primary" aria-label="Example icon button with a menu icon">
+            <mat-icon>send</mat-icon>
+        </button>
+    </div>
+    <div class="layoutTab">
+        <mat-tab-group class="request-tabs" animationDuration="0ms">
+            <mat-tab label="Params">Content 1</mat-tab>
+            <mat-tab label="Authorization">Content 2</mat-tab>
+            <mat-tab label="Headers">Content 3</mat-tab>
+            <mat-tab label="Body">Content 3</mat-tab>
+            <mat-tab label="Settings">Content 3</mat-tab>
+        </mat-tab-group>
+    </div>
 </div>
