@@ -20,6 +20,10 @@ body {
   background: #40463F;
 }
 
+.layoutTab {
+  background: #323532;
+}
+
 .mat-ripple {
   overflow: hidden;
   position: relative
