@@ -27,6 +27,7 @@ import { MatButtonModule } from "@angular/material/button";
 import { MatTooltipModule } from "@angular/material/tooltip";
 import { CollectionsContentComponent } from './collections-content/collections-content.component';
 import { VariablesContentComponent } from './variables-content/variables-content.component';
+import { RequestBodyComponent } from './request-builder/request-body/request-body.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { VariablesContentComponent } from './variables-content/variables-content
     RequestResultCookiesComponent,
     RequestResultHeadersComponent,
     CollectionsContentComponent,
-    VariablesContentComponent
+    VariablesContentComponent,
+    RequestBodyComponent
   ],
     imports: [
         BrowserModule,
