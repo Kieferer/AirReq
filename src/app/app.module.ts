@@ -28,6 +28,7 @@ import { MatTooltipModule } from "@angular/material/tooltip";
 import { CollectionsContentComponent } from './collections-content/collections-content.component';
 import { VariablesContentComponent } from './variables-content/variables-content.component';
 import { RequestBodyComponent } from './request-builder/request-body/request-body.component';
+import { FormsModule } from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -59,7 +60,8 @@ import { RequestBodyComponent } from './request-builder/request-body/request-bod
         MatTabsModule,
         MatButtonToggleModule,
         MatButtonModule,
-        MatTooltipModule
+        MatTooltipModule,
+        FormsModule
     ],
   providers: [],
   bootstrap: [AppComponent]
