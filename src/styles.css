@@ -2,6 +2,7 @@
 html, body {
   height: 100%;
   overflow: clip;
+  background-color: #0f1010;
 }
 
 body {
