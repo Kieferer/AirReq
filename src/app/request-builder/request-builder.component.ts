@@ -17,10 +17,14 @@ export class RequestBuilderComponent {
     this.requestService.setResult({ result: content });
   }
   async sendRequest() {
-    const response= await axios({
-      method: this.selectedHttpMethod ? this.selectedHttpMethod : 'GET',
-      url: this.url
-    })
-    this.sendResult(response.request);
+    try {
+      const response= await axios({
+        method: this.selectedHttpMethod ? this.selectedHttpMethod : 'GET',
+        url: this.url
+      })
+      this.sendResult(response.data);
+    } catch (error) {
+      this.sendResult(error + "");
+    }
   }
 }
