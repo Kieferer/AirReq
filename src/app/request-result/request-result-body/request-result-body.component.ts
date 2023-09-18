@@ -11,7 +11,7 @@ export class RequestResultBodyComponent implements OnInit{
   constructor(private requestService: RequestService) {}
   ngOnInit() {
     this.requestService.result$.subscribe(data => {
-      this.requestService = data;
+      this.receivedResult = data.result;
     });
   }
 }
