@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import axios from 'axios';
+import {RequestService} from "../request.service";
 
 @Component({
   selector: 'app-request-builder',
@@ -8,15 +9,18 @@ import axios from 'axios';
   styleUrls: ['./request-builder.component.css']
 })
 export class RequestBuilderComponent {
+  constructor(private requestService: RequestService) {}
   disableSelect = new FormControl(false);
   selectedHttpMethod: string = 'GET';
   url: string = '';
-
+  sendResult(content: string) {
+    this.requestService.setResult({ result: content });
+  }
   async sendRequest() {
     const response= await axios({
       method: this.selectedHttpMethod ? this.selectedHttpMethod : 'GET',
       url: this.url
     })
-    console.log(response)
+    this.sendResult(response.request);
   }
 }
