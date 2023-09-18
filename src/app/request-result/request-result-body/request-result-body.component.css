@@ -1,0 +1,12 @@
+.result {
+    height: 200px;
+    margin-top: 50px;
+    width: 500px;
+}
+
+.menuBar {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    background-color: #40463f;
+}
