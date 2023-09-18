@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {ApplicationModule, Component} from '@angular/core';
 
 @Component({
   selector: 'app-navigation-bar',
@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./navigation-bar.component.css']
 })
 export class NavigationBarComponent {
-
+  closeApp() {}
 }
